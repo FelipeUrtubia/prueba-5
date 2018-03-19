@@ -3,7 +3,7 @@ class CreateEmpresas < ActiveRecord::Migration[5.1]
     create_table :empresas do |t|
       t.string :name
       t.text :content
-      t.integer :nreclamos
+      t.integer :nreclamos, default: 0
 
       t.timestamps
     end
